@@ -1,0 +1,15 @@
+/*****************************************************************
+    Default Styles / Mobile-First Approach
+*****************************************************************/
+
+/* Reset user agent styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
