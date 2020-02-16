@@ -22,6 +22,11 @@
     --lightGray: hsl(204, 43%, 93%);
     --grayishBlue: hsl(218, 22%, 67%);
     --white: #fff;
+    
+    /* Font Size */
+    --md-h2-size: 2.5rem;
+    --md-h3-size: 2.0rem;
+    --md-p-size: 1.5rem;
 }
 
 /* Base Styles */
@@ -116,3 +121,68 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/*****************************************************************
+    Tablet Styles
+*****************************************************************/
+@media only screen and (min-width: 768px) {
+    /* Base Styles */
+    h2 {
+        font-size: var(--md-h2-size);
+    }
+    h3 {
+        font-size: var(--md-h3-size);
+    }
+    p {
+        font-size: var(--md-p-size);
+    }
+    section {
+        padding: 2.5rem;
+    }
+    /******************************
+        Community Styles
+    ******************************/
+    #community {
+        height: 35vh;
+    }
+    /******************************
+        Container Styles
+    ******************************/
+    .container {
+        display: flex;
+        height: 55vh;
+    }
+    /******************************
+        Subscription Styles
+    ******************************/
+    #subscription {
+        flex: 1;
+    }
+    #subscription .amount {
+        font-size: 2.5rem;
+    }
+    #subscription button {
+        margin-top: 4.5rem;
+        font-size: 1.5rem;
+    }
+
+    /******************************
+        Why Us section Styles
+    ******************************/
+    #why-us {
+        flex: 1;
+    }
+    #why-us h2 {
+        padding-bottom: 5rem;
+    }
+    #why-us ul {
+        font-size: var(--md-p-size);
+    }
+    /******************************
+        Footer Styles
+    ******************************/
+    footer {
+        height: 10vh;
+        padding: 2rem 2.5rem;
+        margin: 0 auto;
+    }
+} 
