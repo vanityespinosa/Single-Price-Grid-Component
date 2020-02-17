@@ -158,11 +158,11 @@ footer a:hover {
         flex: 1;
     }
     #subscription .amount {
-        font-size: 2.5rem;
+        font-size: var(--md-h2-size);
     }
     #subscription button {
         margin-top: 4.5rem;
-        font-size: 1.5rem;
+        font-size: var(--md-p-size);
     }
 
     /******************************
@@ -183,6 +183,73 @@ footer a:hover {
     footer {
         height: 10vh;
         padding: 2rem 2.5rem;
-        margin: 0 auto;
+    }
+} 
+/*****************************************************************
+    Desktop Styles
+*****************************************************************/
+@media only screen and (min-width: 1280px) {
+    /* Base Styles */
+    section {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    /******************************
+        Community Styles
+    ******************************/
+    #community {
+        height: 45vh;
+    }
+
+    /******************************
+        Subscription Styles
+    ******************************/
+    #subscription {
+        display: flex;
+        flex-direction: column;
+    }
+    #subscription button {
+        margin-top: 5.9rem;
+        width: 90%;
+    }
+
+    /******************************
+        Why Us section Styles
+    ******************************/
+    #why-us h2 {
+        padding-bottom: 3rem;
+    }
+
+    /******************************
+        Footer Styles
+    ******************************/
+    footer {
+        padding: 1.5rem 2.5rem;
+    }
+} 
+
+/*****************************************************************
+    Large Desktop Styles
+*****************************************************************/
+@media only screen and (min-width: 1440px) {
+    /* Base Styles */
+    section {
+        padding: 4rem 7rem;
+    }
+
+    /******************************
+        Subscription Styles
+    ******************************/
+    #subscription button {
+        margin-top: 5.9rem;
+        width: 60%;
+        height: 4rem;
+    }
+    /******************************
+        Why Us Section Styles
+    ******************************/
+    #why-us ul {
+        line-height: 1.5;
     }
 } 
